@@ -82,6 +82,7 @@ def get_invoice_data(file_path):
     :param file_path:发票图片路径
     :return: 识别后的发票数据
     """
+    print("out")
     image = get_file_content(file_path)
     data_piaoxiaomi = piaoxiaomi_api(image)
     return data_piaoxiaomi
